@@ -9,6 +9,21 @@
         body {
             padding-left: 60px; /* Adjust this value to increase or decrease the space */
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark text color */
+        }
+        /* Styling for the header */
+        h1 {
+            font-size: 2em; /* Larger font size */
+            color: #2c3e50; /* Darker blue color */
+            margin-bottom: 10px; /* Space between header and description */
+        }
+        /* Styling for the description */
+        p.description {
+            font-size: 1.2em; /* Slightly larger text */
+            color: #555; /* Medium gray text */
+            margin-bottom: 20px; /* Space between description and audio player */
+            max-width: 600px; /* Optional: limits width for better readability */
         }
         .audio-container {
             display: flex;
@@ -22,7 +37,10 @@
     </style>
 </head>
 <body>
-    <h1>Audio Player</h1>
+    <h1>My Custom Audio Player</h1>
+    <p class="description">
+        This is a simple audio player where you can listen to your favorite tracks. Below is an audio file that you can play using the controls provided. Enjoy your listening experience!
+    </p>
     <div class="audio-container">
         <span class="audio-title"> DPCM_test:</span>
         <audio controls>
