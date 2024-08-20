@@ -18,6 +18,12 @@
             color: #2c3e50; /* Darker blue color */
             margin-bottom: 10px; /* Space between header and description */
         }
+        h2 {
+            font-size: 1.5em;
+            color: #2980b9; /* Medium blue color */
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
         /* Styling for the description */
         p.description {
             font-size: 1.2em; /* Slightly larger text */
@@ -37,16 +43,52 @@
     </style>
 </head>
 <body>
-    <h1>Audio samples for "Low-latency Deep Analog Audio Transmission using Joint Source Channel Coding" paper</h1>
+    <h1>Low-latency Deep Analog Audio Transmission using Joint Source Channel Coding</h1>
     <p class="description">
-        This is a simple audio player where you can listen to your favorite tracks. Below is an audio file that you can play using the controls provided. Enjoy your listening experience!
+        This page provides an analysis of audio samples in two key areas: comparison with a baseline and wireless channel performance. Explore the sections below to learn more.
     </p>
-    <div class="audio-container">
-        <span class="audio-title"> DPCM_test:</span>
-        <audio controls>
-            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
+    <!-- Comparison with Baseline Section -->
+    <section>
+        <h2>Comparison with Baseline</h2>
+        <p class="description">
+            In this section, we compare the current audio sample with a baseline to evaluate any significant differences.
+        </p>
+        <div class="audio-container">
+            <span class="audio-title">Baseline Audio:</span>
+            <audio controls>
+                <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-container">
+            <span class="audio-title">DPCM - test:</span>
+            <audio controls>
+                <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+    !-- Wireless Channel Section -->
+    <section>
+        <h2>Wireless Channel</h2>
+        <p class="description">
+            This section analyzes the impact of the wireless channel on audio quality. Listen to the samples below to hear the differences.
+        </p>
+        <div class="audio-container">
+            <span class="audio-title">Original Audio:</span>
+            <audio controls>
+                <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-container">
+            <span class="audio-title">Wireless Channel Audio:</span>
+            <audio controls>
+                <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
 </body>
 </html>
