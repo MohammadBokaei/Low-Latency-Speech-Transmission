@@ -71,6 +71,21 @@
         audio {
             width: 100%;
         }
+        /* Styling for figures and captions */
+        figure {
+            margin: 0;
+            text-align: center;
+            max-width: 600px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        figcaption {
+            font-size: 1em;
+            color: #555;
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
@@ -81,6 +96,16 @@
 
     <section>
         <h2>Baseline Comparison</h2>
+        <p class="description">
+            In this section, we provide audio samples corresponding to section III.C of the paper (comparison to baseline). The performance of the systems in terms of PESQ, ESTOI, and NMSE are plotted below. Due to the lack of space and simplicity, we have not provided the audio samples for 4ms delay systems.
+        </p>
+
+        <!-- Figures after the description -->
+        <figure>
+            <img src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/figures/baseline_comparison.png" alt="Baseline System Figure 1">
+            <figcaption>Figure (4) from paper, where the performance of the proposed SNR configurable system is compared with two baseline systems including Opus and DPCM audio coder</figcaption>
+        </figure>
+        
         <p class="description">
             SNR = 10 dB and R = 8/8,
         </p>
