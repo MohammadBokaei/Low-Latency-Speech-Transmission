@@ -31,14 +31,29 @@
             margin-bottom: 20px; /* Space between description and audio player */
             max-width: 1200px; /* Optional: limits width for better readability */
         }
-        .audio-container {
+        /* Container for audio samples in a row */
+        .audio-row {
             display: flex;
-            align-items: center;
-            margin: 20px;
+            justify-content: space-between;
+            margin-bottom: 20px;
         }
+        /* Each audio sample box */
+        .audio-sample {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 22%; /* Adjust this for spacing */
+        }
+        /* Align audio titles and players vertically */
         .audio-title {
-            margin-right: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            width: 100%;
             font-weight: bold;
+        }
+        /* Ensure audio player width matches title */
+        audio {
+            width: 100%;
         }
     </style>
 </head>
@@ -51,25 +66,41 @@
     <section>
         <h2>Comparison with Baseline</h2>
         <p class="description">
-            In this section, we compare the current audio sample with a baseline to evaluate any significant differences.
+            Below are the audio samples for comparison with the baseline.
         </p>
-        <div class="audio-container">
-            <span class="audio-title">Baseline Audio:</span>
-            <audio controls>
-                <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-        <div class="audio-container">
-            <span class="audio-title">DPCM - test:</span>
-            <audio controls>
-                <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                Your browser does not support the audio element.
-            </audio>
+        <div class="audio-row">
+            <div class="audio-sample">
+                <div class="audio-title">Baseline Audio</div>
+                <audio controls>
+                    <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-sample">
+                <div class="audio-title">Current Audio</div>
+                <audio controls>
+                    <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-sample">
+                <div class="audio-title">Processed Audio</div>
+                <audio controls>
+                    <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-sample">
+                <div class="audio-title">Enhanced Audio</div>
+                <audio controls>
+                    <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
         </div>
     </section>
 
-    !-- Wireless Channel Section -->
+    <!-- Wireless Channel Section -->
     <section>
         <h2>Wireless Channel</h2>
         <p class="description">
