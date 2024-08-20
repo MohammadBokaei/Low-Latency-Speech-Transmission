@@ -31,18 +31,29 @@
             margin-bottom: 20px; /* Space between description and audio player */
             max-width: 1200px; /* Optional: limits width for better readability */
         }
+        /* Container for audio rows */
+        .audio-row-container {
+            margin-bottom: 30px; /* Space between rows */
+        }
+        /* Each audio row title */
+        .row-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2980b9;
+        }
         /* Container for audio samples in a row */
         .audio-row {
             display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
+            flex-wrap: wrap; /* Wrap to the next line if necessary */
+            gap: 10px; /* Space between audio players */
         }
         /* Each audio sample box */
         .audio-sample {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 22%; /* Adjust this for spacing */
+            width: calc(16.66% - 10px); /* Adjust to fit six items with gaps */
         }
         /* Align audio titles and players vertically */
         .audio-title {
@@ -68,105 +79,247 @@
         This page provides an analysis of audio samples in two key areas: comparison with a baseline and wireless channel performance. Explore the sections below to learn more.
     </p>
 
-    
-    <!-- Comparison with Baseline Section -->
     <section>
-        <h2>Comparison with Baseline</h2>
+        <h2>Audio Samples</h2>
         <p class="description">
-            Below are the audio samples for comparison with the baseline.
+            SNR = 10 dB and R = 8/8,
         </p>
-        <div class="audio-row">
-            <div class="audio-sample">
-                <div class="audio-group">
-                    <div class="audio-title">Baseline Audio 1</div>
-                    <audio controls>
-                        <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
+
+        <!-- Row 1 -->
+        <div class="audio-row-container">
+            <div class="row-title">Audio Row 1</div>
+            <div class="audio-row">
+                <div class="audio-sample">
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 1</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 2</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
                 </div>
-                <div class="audio-group">
-                    <audio controls>
-                        <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
+                <div class="audio-sample">
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 3</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 4</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
                 </div>
-            </div>
-            <div class="audio-sample">
-                <div class="audio-group">
-                    <div class="audio-title">Current Audio 1</div>
-                    <audio controls>
-                        <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                <div class="audio-group">
-                    <audio controls>
-                        <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-            </div>
-            <div class="audio-sample">
-                <div class="audio-group">
-                    <div class="audio-title">Processed Audio 1</div>
-                    <audio controls>
-                        <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                <div class="audio-group">
-                    <audio controls>
-                        <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-            </div>
-            <div class="audio-sample">
-                <div class="audio-group">
-                    <div class="audio-title">Enhanced Audio 1</div>
-                    <audio controls>
-                        <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                <div class="audio-group">
-                    <audio controls>
-                        <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-            </div>
-            <div class="audio-sample">
-                <div class="audio-group">
-                    <div class="audio-title">Enhanced Audio 1</div>
-                    <audio controls>
-                        <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                <div class="audio-group">
-                    <audio controls>
-                        <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-            </div>
-            <div class="audio-sample">
-                <div class="audio-group">
-                    <div class="audio-title">Enhanced Audio 1</div>
-                    <audio controls>
-                        <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                <div class="audio-group">
-                    <audio controls>
-                        <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
+                <div class="audio-sample">
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 5</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 6</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <h2>Audio Samples</h2>
+        <p class="description">
+            SNR = 10 dB and R = 6/8,
+        </p>
+
+        <!-- Row 2 -->
+        <div class="audio-row-container">
+            <div class="row-title">Audio Row 1</div>
+            <div class="audio-row">
+                <div class="audio-sample">
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 1</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 2</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <div class="audio-sample">
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 3</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 4</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <div class="audio-sample">
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 5</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 6</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Audio Samples</h2>
+        <p class="description">
+            SNR = 10 dB and R = 4/8,
+        </p>
+
+        <!-- Row 3 -->
+        <div class="audio-row-container">
+            <div class="row-title">Audio Row 1</div>
+            <div class="audio-row">
+                <div class="audio-sample">
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 1</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 2</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <div class="audio-sample">
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 3</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 4</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <div class="audio-sample">
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 5</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 6</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Audio Samples</h2>
+        <p class="description">
+            SNR = 10 dB and R = 2/8,
+        </p>
+
+        <!-- Row 4 -->
+        <div class="audio-row-container">
+            <div class="row-title">Audio Row 1</div>
+            <div class="audio-row">
+                <div class="audio-sample">
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 1</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 2</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <div class="audio-sample">
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 3</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 4</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <div class="audio-sample">
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 5</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-group">
+                        <div class="audio-title">Audio 6</div>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </section>
 
     <!-- Wireless Channel Section -->
