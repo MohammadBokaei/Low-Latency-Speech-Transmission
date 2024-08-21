@@ -101,6 +101,41 @@
         There are two types of audio samples, one male and one female. First, the clean version is presented, followed by the system's performance for R = 1, SNR = &infin;. 
     </p>
 
+    <div class="audio-row-container">
+        <div class="audio-row">
+            <div class="audio-sample">
+                <div class="audio-group">
+                    <div class="audio-title">Clean</div>
+                    <audio controls>
+                        <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/audio-files/clean/male/clean.flac" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="audio-group">
+                    <audio controls>
+                        <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/audio-files/clean/female/clean.flac" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <div class="audio-sample">
+                <div class="audio-group">
+                    <div class="audio-title">Ideal Channel and R = 1</div>
+                    <audio controls>
+                        <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/audio-files/SNR_inf/male/ideal.flac" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="audio-group">
+                    <audio controls>
+                        <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/audio-files/SNR_inf/female/ideal.flac" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section>
         <h2>Baseline Comparison</h2>
         <p class="description">
@@ -108,40 +143,7 @@
         </p>
 
 
-        <div class="audio-row-container">
-            <div class="audio-row">
-                <div class="audio-sample">
-                    <div class="audio-group">
-                        <div class="audio-title">Clean</div>
-                        <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/audio-files/clean/male/clean.falc" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                    <div class="audio-group">
-                        <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/audio-files/clean/female/clean.falc" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                </div>
-                <div class="audio-sample">
-                    <div class="audio-group">
-                        <div class="audio-title">Ideal Channel and R = 1</div>
-                        <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/audio-files/SNR_inf/male/ideal.flac" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                    <div class="audio-group">
-                        <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/audio-files/SNR_inf/female/ideal.flac" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
         <!-- Figures after the description -->
         <figure>
@@ -160,13 +162,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Configurable SNR - delay = 8 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/audio-files/snr_10_R_1/male/proposed_8ms.flac" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/audio-files/snr_10_R_1/female/proposed_8ms.flac" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -175,13 +177,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Configurable SNR - delay = 2 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/audio-files/snr_10_R_1/male/proposed_2ms.flac" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/audio-files/snr_10_R_1/female/proposed_2ms.flac" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -190,13 +192,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Baseline(Opus + RS) - delay = 7.5 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/audio-files/snr_10_R_1/male/Opus_7_5ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_1/female/Opus_7_5ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -205,13 +207,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Baseline(Opus + RS) - delay = 10 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_1/male/Opus_10ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_1/female/Opus_10ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -220,13 +222,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Baseline(DPCM + RS) - delay = 8 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_1/male/DPCM_8ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_1/female/DPCM_8ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -235,13 +237,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Baseline(DPCM + RS) - delay = 2 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_1/male/DPCM_2ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_1/female/DPCM_2ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -260,13 +262,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Configurable SNR - delay = 8 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_6_8/male/propsoed_8ms.flac" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_6_8/female/propsoed_8ms.flac" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -275,13 +277,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Configurable SNR - delay = 2 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_6_8/male/propsoed_2ms.flac" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_6_8/female/propsoed_2ms.flac" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -290,13 +292,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Baseline(Opus + RS) - delay = 7.5 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_6_8/male/Opus_7_5ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_6_8/female/Opus_7_5ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -305,13 +307,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Baseline(Opus + RS) - delay = 10 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_6_8/male/Opus_10ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_6_8/female/Opus_10ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -320,13 +322,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Baseline(DPCM + RS) - delay = 8 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_6_8/male/DPCM_8ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_6_8/female/DPCM_8ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -335,13 +337,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Baseline(DPCM + RS) - delay = 2 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_6_8/male/DPCM_2ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_6_8/female/DPCM_2ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -360,13 +362,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Configurable SNR - delay = 8 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_4_8/male/propsoed_8ms.flac" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_4_8/female/propsoed_8ms.flac" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -375,13 +377,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Configurable SNR - delay = 2 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_4_8/male/propsoed_2ms.flac" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_4_8/female/propsoed_2ms.flac" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -390,13 +392,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Baseline(Opus + RS) - delay = 7.5 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_4_8/male/Opus_7_5ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_4_8/female/Opus_7_5ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -405,13 +407,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Baseline(Opus + RS) - delay = 10 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_4_8/male/Opus_10ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_4_8/female/Opus_10ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -420,13 +422,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Baseline(DPCM + RS) - delay = 8 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_4_8/male/DPCM_8ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_4_8/female/DPCM_8ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -435,13 +437,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Baseline(DPCM + RS) - delay = 2 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_4_8/male/DPCM_2ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_4_8/female/DPCM_2ms.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -461,13 +463,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Configurable SNR - delay = 8 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_2_8/male/propsoed_8ms.flac" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_2_8/female/propsoed_8ms.flac" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -476,73 +478,13 @@
                     <div class="audio-group">
                         <div class="audio-title">Configurable SNR - delay = 2 ms</div>
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_2_8/male/propsoed_2ms.flac" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
                     <div class="audio-group">
                         <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                </div>
-                <div class="audio-sample">
-                    <div class="audio-group">
-                        <div class="audio-title">Baseline(Opus + RS) - delay = 7.5 ms</div>
-                        <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                    <div class="audio-group">
-                        <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                </div>
-                <div class="audio-sample">
-                    <div class="audio-group">
-                        <div class="audio-title">Baseline(Opus + RS) - delay = 10 ms</div>
-                        <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                    <div class="audio-group">
-                        <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                </div>
-                <div class="audio-sample">
-                    <div class="audio-group">
-                        <div class="audio-title">Baseline(DPCM + RS) - delay = 8 ms</div>
-                        <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                    <div class="audio-group">
-                        <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                </div>
-                <div class="audio-sample">
-                    <div class="audio-group">
-                        <div class="audio-title">Baseline(DPCM + RS) - delay = 2 ms</div>
-                        <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                    <div class="audio-group">
-                        <audio controls>
-                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/DPCM_latency_2ms_R_1.wav" type="audio/wav">
+                            <source src="https://raw.githubusercontent.com/MohammadBokaei/Low-Latency-Speech-Transmission/main/snr_10_R_2_8/female/propsoed_2ms.flac" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
